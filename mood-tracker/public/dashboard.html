@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Mood Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Dashboard 📊</h1>
+  <form id="moodForm">
+  <label for="moodRange">How are you feeling today?</label>
+  <input type="range" id="moodRange" min="1" max="10" step="1" value="5">
+  <div id="moodLabel">5 - Neutral 😐</div>
+  <input type="text" id="note" placeholder="Optional note" />
+  <button type="submit">Save Mood</button>
+</form>
+
+  <canvas id="moodChart" width="400" height="200"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
